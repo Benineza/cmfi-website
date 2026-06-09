@@ -23,15 +23,7 @@
 - [Tech Stack](#-tech-stack)
 - [Architecture](#-architecture)
 - [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [API Endpoints](#-api-endpoints)
 - [Screenshots](#-screenshots)
-- [Security](#-security)
-- [Deployment](#-deployment)
-- [Future Enhancements](#-future-enhancements)
-- [License](#-license)
-- [Contact](#-contact)
 
 ---
 
@@ -42,8 +34,7 @@
 This project demonstrates proficiency in modern web development technologies including React Hooks, Spring Boot REST APIs, JPA/Hibernate, PostgreSQL, and secure email integration using Gmail SMTP.
 
 ### 🎯 Purpose
-- Showcase full-stack development capabilities for portfolio
-- Provide churches with an elegant, maintainable web solution
+- Provide the church with an elegant, maintainable web solution
 - Demonstrate best practices in security, responsive design, and API development
 
 ---
