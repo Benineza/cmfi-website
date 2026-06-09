@@ -1,4 +1,4 @@
-# 🙏 CMFI Rwanda Church Website
+# CMFI Rwanda Church Website
 
 <div align="center">
 
