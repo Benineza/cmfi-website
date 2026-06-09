@@ -1,0 +1,24 @@
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, var(--primary-light), var(--bg-body));
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.achievement-card i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+}

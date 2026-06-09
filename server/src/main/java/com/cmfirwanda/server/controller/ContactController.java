@@ -1,12 +1,19 @@
 package com.cmfirwanda.server.controller;
 
-import com.cmfirwanda.server.model.ContactMessage;
-import com.cmfirwanda.server.service.EmailService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cmfirwanda.server.model.ContactMessage;
+import com.cmfirwanda.server.service.ContactService;
 
 @RestController
 @RequestMapping("/api/contact")
@@ -14,7 +21,7 @@ import java.util.Map;
 public class ContactController {
     
     @Autowired
-    private EmailService emailService;
+    private ContactService contactService;
     
     @PostMapping("/submit")
     public ResponseEntity<Map<String, Object>> submitContact(@RequestBody ContactMessage contactMessage) {
@@ -41,7 +48,7 @@ public class ContactController {
             }
             
             // Send email to church
-            emailService.sendContactEmail(
+            contactService.sendContactEmail(
                 contactMessage.getName(),
                 contactMessage.getEmail(),
                 contactMessage.getMessage()
@@ -53,6 +60,7 @@ public class ContactController {
             return ResponseEntity.ok(response);
             
         } catch (Exception e) {
+            e.printStackTrace();
             response.put("success", false);
             response.put("message", "Error sending message. Please try again later.");
             return ResponseEntity.internalServerError().body(response);
