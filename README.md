@@ -86,3 +86,40 @@ Styling: CSS3 with CSS Variables
 HTTP Client: Axios
 Icons: Font Awesome 6
 Fonts: Google Fonts (Inter, Cormorant Garamond)
+```
+### Backend
+```yaml
+Framework: Spring Boot 3.1.5
+Language: Java 17
+Build Tool: Maven
+Database: PostgreSQL
+ORM: JPA/Hibernate
+Email: JavaMailSender (Gmail SMTP)
+```
+### Development Tools
+```yaml
+Version Control: Git & GitHub
+IDE: VS Code
+API Testing: Postman
+Environment: Windows 11 / PowerShell
+```
+┌─────────────────────────────────────────────────────────────┐
+│                         Client Browser                       │
+│                    (React SPA on Vite)                       │
+└─────────────────────────────┬───────────────────────────────┘
+                              │
+                              │ HTTPS / CORS
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Spring Boot REST API                      │
+│                   (Port 8080 - Localhost)                    │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │ Controllers  │  │   Services   │  │  Repository  │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+└─────────────┬────────────────────────────────┬───────────────┘
+              │                                │
+              ▼                                ▼
+    ┌─────────────────┐              ┌─────────────────┐
+    │   PostgreSQL    │              │   Gmail SMTP    │
+    │   Database      │              │   Email Service │
+    └─────────────────┘              └─────────────────┘
