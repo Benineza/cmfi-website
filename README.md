@@ -47,7 +47,7 @@ This project demonstrates proficiency in modern web development technologies inc
 | 🎨 **Responsive Design** | Mobile-first layout that works on all devices |
 | 🌙 **Dark/Light Mode** | User preference saved in localStorage |
 | 📱 **Mobile Navigation** | Hamburger menu for seamless mobile experience |
-| ✨ **Smooth Animations** | Intersection Observer for fade-in effects |
+| 📱 **Social Media Integration** | Live Twitter/X and Instagram feeds |
 | 🧩 **Component-Based** | 12+ reusable React components |
 | ⚡ **Fast Builds** | Vite for lightning-fast HMR and optimized builds |
 | 📧 **Contact Form** | Integrated with backend email service |
@@ -65,6 +65,11 @@ This project demonstrates proficiency in modern web development technologies inc
 | ⚡ **Fast Response** | Optimized for quick email delivery |
 
 ---
+
+### 🌐 Social Media Integration
+The website now displays live social media feeds from:
+- **Twitter/X** - tweets from @cmfirwanda
+- **Instagram** - posts from CMFI Rwanda
 
 ## 🛠 Tech Stack
 
