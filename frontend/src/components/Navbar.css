@@ -23,13 +23,37 @@ body.dark .navbar {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: var(--transition);
+
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;  /* Makes the image round */
+  object-fit: cover;    /* Ensures the image covers the area properly */
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
+.logo-text {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Cormorant Garamond', serif;
   color: var(--text-primary);
-  text-decoration: none;
-  transition: var(--transition);
-  cursor: pointer;
+}
+
+.navbar.scrolled .logo-text {
+  font-size: 1.3rem;
 }
 
 .logo i {

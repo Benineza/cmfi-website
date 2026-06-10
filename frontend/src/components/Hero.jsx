@@ -20,8 +20,10 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-overlay"></div>
       <div className="hero-content container">
-        <h1>Find Hope & Belonging</h1>
-        <p>A spiritual home where faith meets purpose. Join us to grow, serve, and worship.</p>
+        <h1>  Christian Missionary <br /> 
+             Fellowship International
+        </h1>
+        <p>"Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit." - Matthew 28:19-20</p>
         <div className="hero-buttons">
           <button className="btn btn-primary" onClick={scrollToServices}>Join a Service</button>
           <button className="btn btn-outline" onClick={scrollToContact}>Get in Touch</button>

@@ -6,8 +6,8 @@ import About from './components/About'
 import MissionVision from './components/MissionVision'
 import Achievements from './components/Achievements'
 import Services from './components/Services'
-import Leadership from './components/Leadership'
-import Testimonials from './components/Testimonials'
+// import Testimonials from './components/Testimonials'
+import SocialFeed from './components/SocialFeed'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -37,8 +37,7 @@ function App() {
       <MissionVision />
       <Achievements />
       <Services />
-      <Leadership />
-      <Testimonials />
+      <SocialFeed />
       <Contact />
       <Footer />
       <WhatsAppButton />

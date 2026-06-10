@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['Home', 'About', 'Mission', 'Achievements', 'Services', 'Leadership', 'Testimonials', 'Contact']
+  const navItems = ['Home', 'About', 'Mission', 'Achievements', 'Services', 'Contact']
 
   const scrollToSection = (section) => {
     const element = document.getElementById(section.toLowerCase())
@@ -27,7 +27,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('home') }}>
-          <i className="fas fa-church"></i> Grace Cathedral
+          <img 
+            src="/images/cmfi-logo.png" 
+            alt="CMFI Rwanda Logo" 
+            className="logo-image"
+          />
+          <span className="logo-text">CMFI Rwanda</span>
         </a>
         
         <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>

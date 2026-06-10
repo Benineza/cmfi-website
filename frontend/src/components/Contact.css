@@ -28,6 +28,10 @@
   margin-top: 2rem;
 }
 
+.social-footer-icons a {
+  text-decoration: none;  /* This removes the underline */
+}
+
 .social-footer-icons i {
   font-size: 1.5rem;
   cursor: pointer;

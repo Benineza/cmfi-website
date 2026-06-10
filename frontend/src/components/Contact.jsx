@@ -10,6 +10,14 @@ const Contact = () => {
   })
   const [status, setStatus] = useState({ type: '', message: '', loading: false })
 
+  // Social media links - UPDATE THESE WITH YOUR ACTUAL LINKS
+  const socialLinks = {
+    facebook: 'https://www.facebook.com/CMFIRwanda/',   
+    instagram: 'https://www.instagram.com/cmfirwanda/',   
+    youtube: 'https://www.youtube.com/@cmfirwanda',      
+    twitter: 'https://x.com/cmfirwanda'    
+  }
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
@@ -42,14 +50,42 @@ const Contact = () => {
         </div>
         <div className="contact-wrapper">
           <div className="contact-info">
-            <div><i className="fas fa-map-marker-alt"></i><span>123 Grace Ave, Springfield, USA</span></div>
-            <div><i className="fas fa-phone-alt"></i><span>+1 (555) 789-3421</span></div>
+            <div><i className="fas fa-map-marker-alt"></i><span>KG 372 Street, Kigali, Rwanda</span></div>
+            <div><i className="fas fa-phone-alt"></i><span>0780539886</span></div>
             <div><i className="fas fa-envelope"></i><span>cmci.rwanda@gmail.com</span></div>
             <div className="social-footer-icons">
-              <i className="fab fa-facebook-f"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-youtube"></i>
-              <i className="fab fa-twitter"></i>
+              <a 
+                href={socialLinks.facebook} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a 
+                href={socialLinks.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a 
+                href={socialLinks.youtube} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+              <a 
+                href={socialLinks.twitter} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>

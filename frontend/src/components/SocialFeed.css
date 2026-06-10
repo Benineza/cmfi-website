@@ -1,0 +1,17 @@
+.social-feed-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Optional: Custom styling for the masonry grid */
+.social-feed-wrapper :global(.social-masonry) {
+  min-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-feed-wrapper {
+    padding: 0.5rem;
+  }
+}

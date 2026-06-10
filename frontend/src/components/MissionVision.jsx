@@ -14,7 +14,7 @@ const MissionVision = () => {
           <div className="card mission-card">
             <i className="fas fa-hands-helping"></i>
             <h3>Our Mission</h3>
-            <p>To glorify God by making disciples of Jesus Christ through worship, fellowship, and compassionate service, transforming lives and communities.</p>
+            <p>To glorify God by making disciples of Jesus Christ through evangelism, worship, fellowship, and compassionate service, transforming lives and communities.</p>
           </div>
           <div className="card vision-card">
             <i className="fas fa-eye"></i>

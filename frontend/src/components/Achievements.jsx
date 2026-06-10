@@ -3,10 +3,11 @@ import './Achievements.css'
 
 const Achievements = () => {
   const achievements = [
-    { icon: 'fas fa-user-graduate', number: '500+', text: 'Students graduated' },
-    { icon: 'fas fa-utensils', number: '120k+', text: 'Meals donated' },
-    { icon: 'fas fa-church', number: '8', text: 'Church plants' },
-    { icon: 'fas fa-globe', number: '15', text: 'Global missions' }
+    { icon: 'fas fa-users', number: '2500+', text: 'Members' },
+    { icon: 'fas fa-users', number: '15+', text: 'Missionaries' },
+    { icon: 'fas fa-child', number: '10+', text: 'Youth Programs & Activities' },
+    { icon: 'fas fa-church', number: '8', text: 'Church plants in Rwanda' },
+    // { icon: 'fas fa-globe', number: '15', text: 'Global missions' }
   ]
 
   return (
