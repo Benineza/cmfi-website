@@ -67,7 +67,7 @@ This project demonstrates proficiency in modern web development technologies inc
 ---
 
 ### 🌐 Social Media Integration
-The website now displays live social media feeds from:
+The website displays live social media feeds from:
 - **Twitter/X** - tweets from @cmfirwanda
 - **Instagram** - posts from CMFI Rwanda
 
