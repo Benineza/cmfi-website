@@ -11,7 +11,7 @@
 
 **A modern, full-stack church website with email integration and dark mode**
 
-[Live Demo](#) • [API Documentation](#) • [Report Bug](#) • [Request Feature](#)
+[Live Demo](https://cmfirwanda.vercel.app/) • [API Documentation](#) • [Report Bug](#) • [Request Feature](#)
 
 </div>
 
